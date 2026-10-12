@@ -1,27 +1,33 @@
-# 项目验证记录
+# Validation Record
 
-日期：2026-10-12。以下检查在本项目的公开目录结构下执行，没有运行新的真实模型性能实验。
+[中文](docs/zh-CN/VALIDATION.md)
 
-## 测试
+Date: 2026-10-12. These checks were performed using the public repository layout. No new real-model performance experiments were run.
+
+## Tests
 
 ```text
 python -m pytest tests -q --confcutdir=. --basetemp=artifacts/layout-tests
 1550 passed, 61 skipped, 16 subtests passed in 150.96s
 ```
 
-运行环境：Windows、Python 3.12.14、PyTorch 2.7.1+cu128、Transformers 4.57.6；数值测试默认使用 CPU float32。跳过项为未启用的真实 checkpoint 测试及 Linux / POSIX 专用测试。
+Environment: Windows, Python 3.12.14, PyTorch 2.7.1+cu128, Transformers 4.57.6. Numerical tests default to CPU float32. Skips cover disabled real-checkpoint tests and Linux / POSIX-specific tests.
 
-实验命令最终命名调整后另行运行 `tests/test_experiment_blocks.py`，结果为 6 passed、16 subtests passed，覆盖 burst/online 转发、执行顺序、完整调用复用和配对统计。
+After the final experiment-command renaming, `tests/test_experiment_blocks.py` was run separately: 6 passed, 16 subtests passed. It covers burst/online dispatch, execution order, complete-call reuse, and paired statistics.
 
-## 入口、数据和报告
+## Entry points, measurements, and reports
 
-- `python examples/generate.py --help` 与 `python experiments/launch.py --help` 正常运行。
-- `python tools/verify_results.py` 读取两种负载的全部 72 份正式结果，核验策略次序、组合完整性、逐请求时间戳、延迟恒等式、吞吐及均值。突发请求包含 864 条请求测量，在线服务包含 10800 条请求测量。
-- 推理引擎源文件与性能实验记录的指纹一致。实验辅助模块为公开目录调整了导入和路径解析；历史指纹、当前指纹及文件位置映射保留在 `reports/data/PROVENANCE.json`。
-- `python tools/render_burst_report.py` 重新生成全部 12 个突发配置的结果页。
-- `python tools/render_serving_report.py` 完整执行 Notebook 的 9 个代码单元，生成 5 张图及 Markdown 阅读版，无执行错误。
-- 文档链接、Python 语法、文件清单和压缩包完整性均经过检查。
+- `python examples/generate.py --help` and `python experiments/launch.py --help` ran successfully.
+- `python tools/verify_results.py` read all 72 formal result files across both workloads and checked policy order, configuration completeness, request timestamps, latency identities, throughput, and means. Burst requests include 864 request measurements; serving includes 10800.
+- Inference-engine source fingerprints match the measured code. Experiment helpers have adjusted imports and path resolution for the public layout; historical and current fingerprints and file mappings are retained in `reports/data/PROVENANCE.json`.
+- `python tools/render_burst_report.py` regenerated the report for all 12 burst configurations.
+- `python tools/render_serving_report.py` executed all 9 notebook code cells and produced 5 figures and a Markdown edition without execution errors.
+- Documentation links, Python syntax, file manifests, and archive integrity were checked.
 
-## 边界
+## Scope
 
-性能报告来自 Linux、RTX 4090、Qwen3-4B / BF16 的既有实验；此次 CPU 测试不替代 GPU 性能或输出等价验证。跨策略输出哈希差异仍未解释，结论保留固定长度回放和 TTFT 权衡等限定。
+The performance reports use existing Linux / RTX 4090 / Qwen3-4B / BF16 experiments. CPU tests do not replace GPU performance or output-equivalence validation. Cross-policy output-hash differences remain unexplained; conclusions retain the fixed-length replay and TTFT-tradeoff qualifications.
+
+## Bilingual documentation verification
+
+The English and Chinese notebooks were each re-executed successfully (9 code cells and 5 figures per edition). Generated numerical table values match the original notebook. Both burst editions regenerated successfully. All local documentation links and runtime-manifest hashes were checked, and the full 72-file measurement audit passed. This documentation update did not rerun inference or the full engine test suite.

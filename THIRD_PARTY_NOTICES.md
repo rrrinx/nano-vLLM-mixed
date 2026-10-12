@@ -1,6 +1,8 @@
-# 来源与声明
+# Sources and Third-Party Notices
 
-- 推理引擎架构参考 GeeeekExplorer/nano-vllm。对应 MIT 版权和许可原文保留在 `licenses/nano-vllm-MIT.txt`；此文件不将作者自己的新增代码自动改授同一许可证。
-- 使用 Hugging Face Transformers 的 Qwen3 实现进行数值对照，通过本地 checkpoint 加载模型。仓库不分发模型权重和 tokenizer。
-- 实验输入来自 NVIDIA SPEED-Bench 的 `throughput_2k`。不分发 Parquet、原文或可解码的输入 token 序列；公开副本只包含样本索引、长度、指纹和性能测量。重新推理需要使用者自行准备数据。
-- 本次整理未替项目自有代码选择新的开源许可证。维护者可在正式发布时按自己的意愿设置仓库许可证；上游声明应保留。
+[中文](docs/zh-CN/THIRD_PARTY_NOTICES.md)
+
+- The inference-engine architecture references GeeeekExplorer/nano-vllm. Its original MIT copyright and license text is retained in `licenses/nano-vllm-MIT.txt`. This notice does not automatically license the author's additions under the same terms.
+- Hugging Face Transformers' Qwen3 implementation provides the numerical reference; models are loaded from local checkpoints. Model weights and tokenizers are not distributed in this repository.
+- Experiment inputs come from NVIDIA SPEED-Bench `throughput_2k`. Parquet files, source text, and decodable input-token sequences are not distributed. Published copies contain only sample indices, lengths, fingerprints, and performance measurements. Inference reproduction requires obtaining the dataset separately.
+- This publication preparation does not select a new open-source license for the project's own code. The maintainer may select one when publishing; upstream notices must be retained.

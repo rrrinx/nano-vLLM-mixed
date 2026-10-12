@@ -1,17 +1,19 @@
-# 实验工具
+# Experiment Tools
 
-所有运行环境共用这套入口。模型路径、设备和实验参数决定实际运行方式。
+[中文](../docs/zh-CN/experiments/README.md)
 
-| 文件或目录 | 用途 |
+All environments share these entry points. Model paths, devices, and experiment parameters determine execution.
+
+| File or directory | Purpose |
 | --- | --- |
-| `launch.py` | 统一入口，准备、预检、突发请求和在线负载实验 |
-| `prepare.py` | 从模型 tokenizer、数据集和样本索引生成冻结计划 |
-| `run_matrix.py`、`block_design.py` | 配置矩阵、策略执行顺序和完整调用复用 |
-| `audit.py`、`analyze.py` | 完整性检查与配对分析 |
-| `common/`、`online/` | 计时、请求回放、在线指标与报告 |
-| `benchmark.py` | 基础测量与指标工具 |
-| `simulation/` | 不执行模型前向的 CPU 调度模拟 |
-| `math500/` | 在线输入编码和相关测试所依赖的辅助模块 |
-| `metadata/` | 探索与排除样本的索引，帮助重建输入集合 |
+| `launch.py` | Unified entry point for preparation, preflight checks, bursts, and continuous arrivals |
+| `prepare.py` | Frozen plans from the model tokenizer, dataset, and sample indices |
+| `run_matrix.py`, `block_design.py` | Configuration matrices, policy execution order, and complete-call reuse |
+| `audit.py`, `analyze.py` | Integrity checks and paired analysis |
+| `common/`, `online/` | Timing, request replay, serving metrics, and reporting |
+| `benchmark.py` | Basic measurement and metric utilities |
+| `simulation/` | CPU scheduling simulations without model forward passes |
+| `math500/` | Helpers used by online input encoding and related tests |
+| `metadata/` | Exploration and exclusion indices for reconstructing input sets |
 
-命令见 [复现指南](../docs/REPRODUCE.md)，结果见 [报告索引](../reports/README.md)。
+See the [reproduction guide](../docs/REPRODUCE.md) for commands and the [report index](../reports/README.md) for results.

@@ -1,4 +1,6 @@
-# Remote experiment audit and paired results
+# Experiment Audit and Paired Results
+
+[中文](../../../../docs/zh-CN/reports/data/burst_requests/formal/analysis.md)
 
 Mode: burst; complete replays: 108; source variants: 1.
 

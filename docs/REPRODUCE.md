@@ -1,10 +1,12 @@
-# 突发请求与长输入在线负载复现指南
+# Reproducing Burst and Long-Input Serving Experiments
 
-这里区分重新分析已公开的测量，以及重新加载模型进行推理。前者不需要 GPU、模型或数据集；后者需要自行准备这些资源。此发布快照只包含已完成实验的代码和证据，命令不会在阅读或安装时自动执行。
+[中文](zh-CN/docs/REPRODUCE.md)
 
-## 1. 重算已有结果
+Published measurements can be reanalyzed without a GPU, model, or dataset. Rerunning inference requires supplying those resources. This snapshot contains code and evidence for completed experiments; reading or installing it does not automatically launch experiments.
 
-从仓库根目录运行：
+## 1. Recompute existing results
+
+Run from the repository root:
 
 ```bash
 python tools/verify_results.py
@@ -12,9 +14,9 @@ python -m pip install -r requirements-report.txt
 python tools/render_serving_report.py
 ```
 
-Notebook 的全部代码单元将重新执行，更新 `reports/long_input_serving/` 下的 Notebook、Markdown 和五张图。重算只使用公开测量，不加载模型。Linux 若缺少中文字体，安装 Noto Sans CJK 后再执行；数字计算不受字体影响。
+All notebook cells execute again, updating the English notebook, Markdown report, and five figures in `reports/long_input_serving/`. This only reads published measurements and does not load a model. Both report generators default to English; use `--language zh-CN` to update their Chinese editions under `docs/zh-CN/`. Chinese figures require a CJK font such as Noto Sans CJK; English figures do not.
 
-原始配对分析器也已保留。若要重跑并保留原发布表，先复制到忽略目录：
+The original paired analyzer is also included. To preserve the published tables, first copy the data into an ignored directory:
 
 ```bash
 python -c "import shutil; shutil.copytree('reports/data/burst_requests/formal', 'artifacts/reanalysis/burst_requests')"
@@ -23,11 +25,11 @@ python -c "import shutil; shutil.copytree('reports/data/long_input_serving/forma
 python experiments/analyze.py artifacts/reanalysis/long_input_serving --mode stream
 ```
 
-这些目标目录需尚不存在，避免覆盖先前分析。
+These destination directories must not already exist, to avoid overwriting previous analyses.
 
-## 2. 准备独立推理环境
+## 2. Prepare an inference environment
 
-正式测量环境为 Linux、Python 3.12.3、PyTorch 2.8.0+cu128、Transformers 4.57.6、单张 RTX 4090、Qwen3-4B / BF16。仓库整理测试可能使用另一环境，见 `VALIDATION.md`；二者不要混淆。
+Formal measurements used Linux, Python 3.12.3, PyTorch 2.8.0+cu128, Transformers 4.57.6, one RTX 4090, and Qwen3-4B / BF16. Repository validation used a different environment; see [VALIDATION.md](../VALIDATION.md).
 
 ```bash
 python -m venv .venv
@@ -36,17 +38,17 @@ python -m pip install -r requirements.txt
 export MODEL=/absolute/path/to/Qwen3-4B
 ```
 
-模型目录应包含 config、tokenizer 和 safetensors。准备 SPEED-Bench `throughput_2k` 文件到：
+The model directory should contain the config, tokenizer, and safetensors files. Place SPEED-Bench `throughput_2k` at:
 
 ```text
 offline/SPEED-Bench/throughput_2k/test-00000-of-00001.parquet
 ```
 
-本次冻结文件 SHA-256 为 `90df6c01a3cb7dc0243a54545c4fc9f6c40aa5ea472f2a8f085e76a4744704ee`。数据来源为 [SPEED-Bench](https://huggingface.co/datasets/nvidia/SPEED-Bench)。准备脚本检查该哈希与样本身份；若文件发生变化，应记录为新的数据版本，不能直接合并旧实验。
+The frozen file SHA-256 is `90df6c01a3cb7dc0243a54545c4fc9f6c40aa5ea472f2a8f085e76a4744704ee`. Source: [SPEED-Bench](https://huggingface.co/datasets/nvidia/SPEED-Bench). Preparation checks this hash and sample identities. A changed file requires a new data version; do not merge it into the old experiment.
 
-探索阶段已用样本的索引已随包保留，用于排除已用输入并重建相同的确认集合；正文不在包内。抽样种子固定为 20261010。
+Indices of samples used during exploration are included to exclude previously used inputs and reconstruct the confirmation sets. Text is not included. The sampling seed is fixed at 20261010.
 
-## 3. 冻结计划
+## 3. Freeze the plan
 
 ```bash
 bash run_experiments.sh --stage prepare --model "$MODEL" \
@@ -54,28 +56,28 @@ bash run_experiments.sh --stage prepare --model "$MODEL" \
   --no-install
 ```
 
-记录命令输出的 `FROZEN PLAN` 路径，然后填入以下变量：
+Record the `FROZEN PLAN` path printed by the command and set:
 
 ```bash
 export EXPERIMENT_PLAN=/absolute/path/to/this/repository/plans/GENERATED_TIMESTAMP
 ```
 
-通用配置：max_seqs=16、KV block_size=128、num_blocks=565、prefix_cache=false、ignore_eos=true、每策略一次完整预热。max_model_len 由冻结输入计算，原实验为 2298。`prepare` 仅准备输入，不执行模型推理。
+Shared settings: max_seqs=16, KV block_size=128, num_blocks=565, prefix_cache=false, ignore_eos=true, and one full warmup per policy. max_model_len is calculated from the frozen inputs; it was 2298 in the original experiment. `prepare` prepares inputs without running model inference.
 
-## 4. 突发请求调度
+## 4. Burst scheduling
 
 ```bash
 bash run_experiments.sh --stage burst --model "$MODEL" --plan "$EXPERIMENT_PLAN" \
   --budgets 128,256,384,512 --block-ids 0,3,4 --no-install
 ```
 
-三个确认输入组；每组四个已有 Decode 请求和四个后到 Prefill 请求。已有请求使用 64-token 前缀、输出 256 token；后到请求使用完整长文本、输出 32 token；共同延迟为 1 秒。
+There are three confirmation cohorts, each with four existing decode requests and four late prefill requests. Existing requests use 64-token prefixes and generate 256 tokens. Late requests use full long texts and generate 32 tokens. The shared arrival delay is 1 second.
 
-正式部分为 3 输入组 × 4 预算 × 3 策略 × 3 block，即 108 次策略回放。入口先执行 pilot，检查后到请求与已有 Decode 的重叠；pilot 不计入正式样本。新机器若不能满足重叠条件，应在新计划中统一校准 delay，不能按策略分别调参。
+The formal matrix has 3 cohorts × 4 budgets × 3 policies × 3 blocks = 108 policy replays. The entry point first runs a pilot to check overlap between late arrivals and existing decoding; pilots are excluded from formal samples. If another machine fails this overlap condition, calibrate one shared delay in a new plan, rather than tuning it separately per policy.
 
-原突发请求实验复用了中断批次中 12 个完整调用，具体见 `reports/data/burst_requests/formal/reuse.json`。从零复现不需要 `--reuse-from`，也不要拿公开分析副本做执行恢复。
+The original burst experiment reused 12 complete calls from an interrupted batch; see `reports/data/burst_requests/formal/reuse.json`. A fresh reproduction does not require `--reuse-from`. Do not use published analysis copies to resume execution.
 
-## 5. 长输入在线服务
+## 5. Long-input serving
 
 ```bash
 bash run_experiments.sh --stage online --model "$MODEL" --plan "$EXPERIMENT_PLAN" \
@@ -83,14 +85,14 @@ bash run_experiments.sh --stage online --model "$MODEL" --plan "$EXPERIMENT_PLAN
   --arrival-seeds 20261012,20261013 --block-ids 0,3,4 --no-install
 ```
 
-同一套 100 条完整长输入，50 条 high_entropy、50 条 low_entropy，每请求输出 128 token。正式部分为 3 速率 × 2 到达种子 × 2 预算 × 3 策略 × 3 block，即 108 次策略回放；pilot 和预热另外执行。
+The same 100 complete long inputs are used: 50 high_entropy and 50 low_entropy texts, with 128 output tokens per request. The formal matrix has 3 rates × 2 arrival seeds × 2 budgets × 3 policies × 3 blocks = 108 policy replays. Pilots and warmups run separately.
 
-这些速率复现原报告条件，在不同 GPU 或模型上未必仍代表相同负载强度。不能将新机器的指标与旧机器直接当作调度对照。
+These rates reproduce the original report's conditions; they may represent different load levels on another GPU or model. Measurements across machines are not controlled scheduling comparisons.
 
-## 6. 结果与版本
+## 6. Outputs and versions
 
-新输出写入 `runs/`，默认不被 Git 收录。`--dry-run` 可加入突发请求与长输入在线负载命令，执行配置预检但不加载模型推理。`--stage analyze --results ... --mode burst/stream` 只做分析。
+New outputs go to `runs/`, which is ignored by Git. Add `--dry-run` to burst or serving commands to perform configuration preflight checks without model inference. `--stage analyze --results ... --mode burst/stream` only analyzes results.
 
-`PACKAGE_MANIFEST.json` 固定运行代码和元数据，防止测量时混入代码修改；文档和报告重算不受该清单约束。若主动修改运行代码，应明确产生新版本和新的指纹清单，不要绕过检查来混合旧结果。
+`PACKAGE_MANIFEST.json` pins runtime code and metadata to detect changes during measurement; it also lists some directory READMEs. This translation updates only those documentation hashes, preserving runtime-code fingerprints. Report regeneration does not change runtime code. Deliberate runtime changes require an explicit new version and fingerprint manifest; do not bypass checks to mix results across versions.
 
-当前未开展 GPU 合批效率的独立消融，也未解决跨策略生成哈希差异。重新推理可观察性能重复性，不自动完成答案等价验证。
+Independent ablations of GPU batching efficiency have not been performed, and cross-policy generation-hash differences remain unresolved. Repeating inference can assess performance reproducibility but does not automatically establish answer equivalence.

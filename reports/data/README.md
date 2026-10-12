@@ -1,29 +1,31 @@
-# 公开测量数据
+# Published Measurements
 
-`burst_requests/formal/` 和 `long_input_serving/formal/` 各保留 36 份 results.json，每份包含三个策略，共各 108 次正式回放。目录中的 schedule、blocks、reuse 和原分析表用于定位配置与重复。突发请求实验有 12 个完整调用从先前中断批次复用；它们已包含在这 36 份文件内，没有重复计数。
+[中文](../../docs/zh-CN/reports/data/README.md)
 
-## 与本地原始记录的区别
+`burst_requests/formal/` and `long_input_serving/formal/` each retain 36 `results.json` files, with three policies per file and 108 formal replays per workload. Schedule, block, reuse, and original analysis files identify configurations and repeats. The burst experiment reused 12 complete calls from an earlier interrupted batch; these are already included in the 36 files and are not counted twice.
 
-1. 保留每次回放的全部 `runs`：汇总指标、逐请求时间戳、输出长度、输出哈希、抢占和混合步比例，不改动任何测量数值。
-2. `trace.requests[].prompt_token_ids` 替换为 `input_tokens` 和 `prompt_token_ids_sha256`。哈希对原 token 列表的紧凑 JSON（separators=(',', ':')、UTF-8）计算 SHA-256；不分发可解码的输入内容。
-3. 删除顶层重复的 `summary`；每次策略回放的 `runs[].summary` 完整保留。
-4. 增加 `publication_export` 标记。公开 JSON 是分析副本，不是可直接交给引擎的输入 trace，也不是原始文件的逐字节副本。
-5. `PROVENANCE.json` 记录每份原始结果的相对路径和 SHA-256、公开副本路径和 SHA-256，以及实测代码与发布代码的逐文件映射。推理引擎文件保持原内容；实验工具为统一目录调整了导入和路径解析，分别记录历史与当前指纹，不将改过路径的文件声称为逐字节相同。
+## Differences from the original local records
 
-目录与原结果一一对应：突发请求实验来自 `20261011-231131-087401-confirm/formal`，长输入在线实验来自 `20261012-015122-127636-online/formal`。历史元数据中的 `/root/...` 路径仅用于追溯，重算报告不访问这些路径。
+1. All `runs` are retained: summary metrics, request timestamps, output lengths, output hashes, preemptions, and mixed-step fractions. No measured values are changed.
+2. `trace.requests[].prompt_token_ids` is replaced with `input_tokens` and `prompt_token_ids_sha256`. SHA-256 is computed over compact JSON of the original token list (`separators=(',', ':')`, UTF-8). Decodable input content is not distributed.
+3. The duplicate top-level `summary` is removed; every `runs[].summary` remains complete.
+4. A `publication_export` marker is added. Public JSON files are analysis copies, not executable input traces or byte-for-byte copies of the originals.
+5. `PROVENANCE.json` records original relative paths and SHA-256 hashes, published paths and hashes, and file-level mappings between measured and published code. Inference-engine files retain their original contents. Experiment tools have adjusted imports and path resolution for the unified layout; historical and current fingerprints are recorded separately without claiming byte-for-byte identity for modified files.
 
-`source_sha256` 是当时记录的源文件指纹。`checkpoint_files` 主要记录分片大小和修改时间，以及 index 文件 SHA-256，不是所有模型权重内容的完整哈希。
+Directories map one-to-one to the original results: bursts come from `20261011-231131-087401-confirm/formal`; serving comes from `20261012-015122-127636-online/formal`. Historical `/root/...` paths provide provenance only; report regeneration does not access them.
 
-## 核验
+`source_sha256` contains the source fingerprints recorded at measurement time. `checkpoint_files` mainly records shard sizes and modification times plus the index-file SHA-256; it is not a complete content hash of all model weights.
+
+## Verification
 
 ```bash
 python tools/verify_results.py
 ```
 
-该命令检查文件指纹、全部配置与 block、策略次序、逐请求完整性、延迟恒等式及汇总均值，并打印简历中使用的两个配置。不会加载模型。
+This command checks file fingerprints, all configurations and blocks, policy order, request completeness, latency identities, and summary means. It also prints the two configurations used in the CV. No model is loaded.
 
-## 限制
+## Limitations
 
-所有正式文件均有跨策略输出哈希不一致；长输入在线实验同策略重复也有差异。原因尚未确定。没有保存完整生成 token，不能据此证明答案质量等价。
+All formal files have cross-policy output-hash mismatches; serving repeats also differ within the same policy. The cause is undetermined. Full generated token sequences were not retained, so these records cannot establish equivalent answer quality.
 
-每配置只有三个执行 block；请求不是独立重复。报告的配对区间只描述重复波动，未经多重比较校正。长输入在线实验两个到达种子使用同一套 100 条文本。全部结果限于单模型、单 GPU、合成到达及固定输出长度。
+Each configuration has only three execution blocks; individual requests are not independent repeats. Paired intervals describe repeat variability and are not adjusted for multiple comparisons. Both serving arrival seeds use the same 100 texts. Results are limited to one model, one GPU, synthetic arrivals, and fixed output lengths.

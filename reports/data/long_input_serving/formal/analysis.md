@@ -1,4 +1,6 @@
-# Remote experiment audit and paired results
+# Experiment Audit and Paired Results
+
+[中文](../../../../docs/zh-CN/reports/data/long_input_serving/formal/analysis.md)
 
 Mode: stream; complete replays: 108; source variants: 1.
 
