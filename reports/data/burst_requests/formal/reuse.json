@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "block": 0,
+      "case": "confirm0_T128",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm0_T128/results.json",
+      "sha256": "a4b171ad51e8c85af335b6942bff2e250fa5ecbc29829f0dad3fe5a6a740d26f"
+    },
+    {
+      "block": 0,
+      "case": "confirm0_T256",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm0_T256/results.json",
+      "sha256": "051e9c6c1ce90edf657b45fcf166150d8270a23adeb57eb8b5b938b9c3c0189b"
+    },
+    {
+      "block": 0,
+      "case": "confirm0_T384",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm0_T384/results.json",
+      "sha256": "6719a31c502eafa3f88c3c2096c30cb2be6fceb48c7de4ca8771f6e8afb33d2c"
+    },
+    {
+      "block": 0,
+      "case": "confirm0_T512",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm0_T512/results.json",
+      "sha256": "a9833e15a40282c9f9e9227ff777ac36268261bc4668d0b47140c16e98e33344"
+    },
+    {
+      "block": 0,
+      "case": "confirm1_T128",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm1_T128/results.json",
+      "sha256": "4ff46737f6a81c7386653f9e847f84840dc16e6711c427829802747cc0648c39"
+    },
+    {
+      "block": 0,
+      "case": "confirm1_T256",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm1_T256/results.json",
+      "sha256": "d1ed825e91a910cd17be6b86291d274e262947b40d924981d369d9107d3c4aea"
+    },
+    {
+      "block": 0,
+      "case": "confirm1_T384",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm1_T384/results.json",
+      "sha256": "782a36db8841f8c4664a302dd8a790ffe8faee63c250b74be373c7498f4d6a83"
+    },
+    {
+      "block": 0,
+      "case": "confirm1_T512",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm1_T512/results.json",
+      "sha256": "e8db6caaf2456fc55365403753ec6eba4e190edf289941f8118c5547d5051cce"
+    },
+    {
+      "block": 0,
+      "case": "confirm2_T128",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm2_T128/results.json",
+      "sha256": "78881091afe218ea67800f6679bc06d5eddea18cb98dc30bbec863b03e99e57e"
+    },
+    {
+      "block": 0,
+      "case": "confirm2_T256",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm2_T256/results.json",
+      "sha256": "d444f5abe5e2b130a82114aaaf5942530ec6bf755dc1c458e0d652d06f7d7d8a"
+    },
+    {
+      "block": 0,
+      "case": "confirm2_T384",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm2_T384/results.json",
+      "sha256": "fedd723437810d9e3cbaf7c3bfbb0d40d1db92c97ecae953ba548e39474fb576"
+    },
+    {
+      "block": 0,
+      "case": "confirm2_T512",
+      "source_record": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm/formal/block0/confirm2_T512/results.json",
+      "sha256": "7f50de82c264985562a056d0c4c1a1eab32bddfcb1623097ea293e24a1d25ed1"
+    }
+  ]
+}

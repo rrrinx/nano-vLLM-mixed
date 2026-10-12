@@ -1,0 +1,594 @@
+{
+  "entries": [
+    {
+      "block": 0,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T128.json",
+      "config_sha256": "ebdbb2b72fa6d3565d9b65da795408c02e3f1c4924d031ae1d7c577a6cd055f4",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm0_T128"
+    },
+    {
+      "block": 0,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T256.json",
+      "config_sha256": "41b131bab6f109aec3c6149dc8d3d82e5c308d7947476b36715dba0f9a5afa04",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm0_T256"
+    },
+    {
+      "block": 0,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T384.json",
+      "config_sha256": "adc61f969ef6531b00b315de25b870b09d8b3eb55a4e4f30444de316da83272a",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm0_T384"
+    },
+    {
+      "block": 0,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T512.json",
+      "config_sha256": "b2fcef332c272aa3ef20f9389eb9b3c49c0a4b7cc507636f24cbc523ba09febc",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm0_T512"
+    },
+    {
+      "block": 0,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T128.json",
+      "config_sha256": "947f5e76667fd5c4db9aaf5df5c779e8bf0d80101fa1d99902511d2f93634b52",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm1_T128"
+    },
+    {
+      "block": 0,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T256.json",
+      "config_sha256": "323e3396331764d2e1908561963f29e9d452a84600526c350300c13dd55a77bb",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm1_T256"
+    },
+    {
+      "block": 0,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T384.json",
+      "config_sha256": "1420701dc84f7d3c6431efa9852e7a352eeb0b712bd8d474991a16f2be735392",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm1_T384"
+    },
+    {
+      "block": 0,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T512.json",
+      "config_sha256": "4bc7031c7d3de17dcb649ce161445ab27c8e003bf53ddaff8ea9be665b8694f9",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm1_T512"
+    },
+    {
+      "block": 0,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T128.json",
+      "config_sha256": "f632c459c9182dd4ea85b66f13705e310ad23741ed16b07297deda17676ddb7a",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm2_T128"
+    },
+    {
+      "block": 0,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T256.json",
+      "config_sha256": "0fbd3dc93e765338b8af4b384608b99fd45c846338732964d5246f8d0dd8268f",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm2_T256"
+    },
+    {
+      "block": 0,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T384.json",
+      "config_sha256": "c157bd403c5e6b084059e6849b07896e6a5539c38cb869d5199f2b3825b4232c",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm2_T384"
+    },
+    {
+      "block": 0,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T512.json",
+      "config_sha256": "41792b6b36fc3e0779b49454f939d90448eef2bcf60a29eff79fee18da39ffcc",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block0/confirm2_T512"
+    },
+    {
+      "block": 3,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T512.json",
+      "config_sha256": "b2fcef332c272aa3ef20f9389eb9b3c49c0a4b7cc507636f24cbc523ba09febc",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm0_T512"
+    },
+    {
+      "block": 3,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T128.json",
+      "config_sha256": "947f5e76667fd5c4db9aaf5df5c779e8bf0d80101fa1d99902511d2f93634b52",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm1_T128"
+    },
+    {
+      "block": 3,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T256.json",
+      "config_sha256": "323e3396331764d2e1908561963f29e9d452a84600526c350300c13dd55a77bb",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm1_T256"
+    },
+    {
+      "block": 3,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T384.json",
+      "config_sha256": "1420701dc84f7d3c6431efa9852e7a352eeb0b712bd8d474991a16f2be735392",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm1_T384"
+    },
+    {
+      "block": 3,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T512.json",
+      "config_sha256": "4bc7031c7d3de17dcb649ce161445ab27c8e003bf53ddaff8ea9be665b8694f9",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm1_T512"
+    },
+    {
+      "block": 3,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T128.json",
+      "config_sha256": "f632c459c9182dd4ea85b66f13705e310ad23741ed16b07297deda17676ddb7a",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm2_T128"
+    },
+    {
+      "block": 3,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T256.json",
+      "config_sha256": "0fbd3dc93e765338b8af4b384608b99fd45c846338732964d5246f8d0dd8268f",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm2_T256"
+    },
+    {
+      "block": 3,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T384.json",
+      "config_sha256": "c157bd403c5e6b084059e6849b07896e6a5539c38cb869d5199f2b3825b4232c",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm2_T384"
+    },
+    {
+      "block": 3,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T512.json",
+      "config_sha256": "41792b6b36fc3e0779b49454f939d90448eef2bcf60a29eff79fee18da39ffcc",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm2_T512"
+    },
+    {
+      "block": 3,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T128.json",
+      "config_sha256": "ebdbb2b72fa6d3565d9b65da795408c02e3f1c4924d031ae1d7c577a6cd055f4",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm0_T128"
+    },
+    {
+      "block": 3,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T256.json",
+      "config_sha256": "41b131bab6f109aec3c6149dc8d3d82e5c308d7947476b36715dba0f9a5afa04",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm0_T256"
+    },
+    {
+      "block": 3,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T384.json",
+      "config_sha256": "adc61f969ef6531b00b315de25b870b09d8b3eb55a4e4f30444de316da83272a",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block3/confirm0_T384"
+    },
+    {
+      "block": 4,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T128.json",
+      "config_sha256": "947f5e76667fd5c4db9aaf5df5c779e8bf0d80101fa1d99902511d2f93634b52",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm1_T128"
+    },
+    {
+      "block": 4,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T256.json",
+      "config_sha256": "323e3396331764d2e1908561963f29e9d452a84600526c350300c13dd55a77bb",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm1_T256"
+    },
+    {
+      "block": 4,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T384.json",
+      "config_sha256": "1420701dc84f7d3c6431efa9852e7a352eeb0b712bd8d474991a16f2be735392",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm1_T384"
+    },
+    {
+      "block": 4,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm1_T512.json",
+      "config_sha256": "4bc7031c7d3de17dcb649ce161445ab27c8e003bf53ddaff8ea9be665b8694f9",
+      "trace_file_sha256": "4b34c127c2a9b5ec03c3650d3d0964c9855dcd31f7d8419e11424e71ba5f2f3c",
+      "set": "trace_confirm1",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm1_T512"
+    },
+    {
+      "block": 4,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T128.json",
+      "config_sha256": "f632c459c9182dd4ea85b66f13705e310ad23741ed16b07297deda17676ddb7a",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm2_T128"
+    },
+    {
+      "block": 4,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T256.json",
+      "config_sha256": "0fbd3dc93e765338b8af4b384608b99fd45c846338732964d5246f8d0dd8268f",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm2_T256"
+    },
+    {
+      "block": 4,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T384.json",
+      "config_sha256": "c157bd403c5e6b084059e6849b07896e6a5539c38cb869d5199f2b3825b4232c",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm2_T384"
+    },
+    {
+      "block": 4,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm2_T512.json",
+      "config_sha256": "41792b6b36fc3e0779b49454f939d90448eef2bcf60a29eff79fee18da39ffcc",
+      "trace_file_sha256": "3d97405eeebef3335c61f53ebfab1c82eb0d5be2db440b5923cfed23e01103e7",
+      "set": "trace_confirm2",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm2_T512"
+    },
+    {
+      "block": 4,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T128.json",
+      "config_sha256": "ebdbb2b72fa6d3565d9b65da795408c02e3f1c4924d031ae1d7c577a6cd055f4",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T128",
+      "token_budget": 128,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm0_T128"
+    },
+    {
+      "block": 4,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T256.json",
+      "config_sha256": "41b131bab6f109aec3c6149dc8d3d82e5c308d7947476b36715dba0f9a5afa04",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T256",
+      "token_budget": 256,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm0_T256"
+    },
+    {
+      "block": 4,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T384.json",
+      "config_sha256": "adc61f969ef6531b00b315de25b870b09d8b3eb55a4e4f30444de316da83272a",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm0_T384"
+    },
+    {
+      "block": 4,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/plans/20261011-195408-696114/confirm0_T512.json",
+      "config_sha256": "b2fcef332c272aa3ef20f9389eb9b3c49c0a4b7cc507636f24cbc523ba09febc",
+      "trace_file_sha256": "14de3b003b346e1c409989a5385ab5f318580e6e9f12d9e3d210551f09f7d648",
+      "set": "trace_confirm0",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261011-231131-087401-confirm/formal/block4/confirm0_T512"
+    }
+  ],
+  "blocks": 3,
+  "block_ids": [
+    0,
+    3,
+    4
+  ],
+  "policies": [
+    "separate",
+    "interleaved",
+    "mixed"
+  ],
+  "position_balanced": true,
+  "reuse_from": "/root/work/nano-vllm-remote/runs/20261011-211952-699252-confirm",
+  "tool_sha256": "eae284a7b0818e12e61741e0b11f7e3fe9d70685bd50dfb088eb5f96ba93114d"
+}

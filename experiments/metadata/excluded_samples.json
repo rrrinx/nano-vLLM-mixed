@@ -1,0 +1,68 @@
+{
+  "selected": [
+    {
+      "index": 0,
+      "question_id": "5f9426e0cc574f12a7dc67b5c08e65f4",
+      "category": "high_entropy",
+      "source": "https://www.gutenberg.org",
+      "src_id": "gutenberg_open_books_2277",
+      "qwen_chat_tokens": 2046
+    },
+    {
+      "index": 1024,
+      "question_id": "e87090f1c71a43728156a4026b115094",
+      "category": "low_entropy",
+      "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+      "src_id": "tianyang/repobench_python_v1.1-in_file_520",
+      "qwen_chat_tokens": 2025
+    },
+    {
+      "index": 1,
+      "question_id": "3aff9625ca3549a492110713c222d4a0",
+      "category": "high_entropy",
+      "source": "https://www.gutenberg.org",
+      "src_id": "gutenberg_open_books_2481",
+      "qwen_chat_tokens": 2005
+    },
+    {
+      "index": 1026,
+      "question_id": "7103301edcad4f21b33af57f6899d5e3",
+      "category": "low_entropy",
+      "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+      "src_id": "tianyang/repobench_python_v1.1-cross_file_first_1194",
+      "qwen_chat_tokens": 2031
+    },
+    {
+      "index": 2,
+      "question_id": "25a876081dd6427b90fe3afdc173c65f",
+      "category": "high_entropy",
+      "source": "https://www.gutenberg.org",
+      "src_id": "gutenberg_open_books_2582",
+      "qwen_chat_tokens": 2069
+    },
+    {
+      "index": 1028,
+      "question_id": "73b8067e24534ce390286087041a8695",
+      "category": "low_entropy",
+      "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+      "src_id": "tianyang/repobench_java_v1.1-cross_file_first_1650",
+      "qwen_chat_tokens": 1989
+    },
+    {
+      "index": 3,
+      "question_id": "f11eaa5d9a524a61b18b9d65800a9b4e",
+      "category": "high_entropy",
+      "source": "https://www.gutenberg.org",
+      "src_id": "gutenberg_open_books_2559",
+      "qwen_chat_tokens": 2026
+    },
+    {
+      "index": 1030,
+      "question_id": "e9c0585d54d24a918b9b3c85a1194e7e",
+      "category": "low_entropy",
+      "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+      "src_id": "tianyang/repobench_java_v1.1-in_file_204",
+      "qwen_chat_tokens": 2031
+    }
+  ]
+}

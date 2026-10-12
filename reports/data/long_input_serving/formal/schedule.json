@@ -1,0 +1,594 @@
+{
+  "entries": [
+    {
+      "block": 0,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T384.json",
+      "config_sha256": "7932f50ba58a1be56a85808fd5270a1e72f0da87e10d1e13ac5b52cf6e3ecaae",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate0_seed20261012_T384"
+    },
+    {
+      "block": 0,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T512.json",
+      "config_sha256": "257e5a749091c5e29ed3e7e89331ba917eb95f4a13ae084c8f055e7bf594ad9f",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate0_seed20261012_T512"
+    },
+    {
+      "block": 0,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T384.json",
+      "config_sha256": "3ffaa9d9f1cef7b9a1cd6ddc7d9ca09c716def0dd76dff9b42adf9ed138e9ca9",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate0_seed20261013_T384"
+    },
+    {
+      "block": 0,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T512.json",
+      "config_sha256": "72082e493dc4efc47827885c3e6a143ec6c763f5c2916d6ba82e69d9e59e639a",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate0_seed20261013_T512"
+    },
+    {
+      "block": 0,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T384.json",
+      "config_sha256": "cf78cb32c2b0de62a151db3829bdcf310422cf06e5743954f601d9698704a99a",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate1_seed20261012_T384"
+    },
+    {
+      "block": 0,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T512.json",
+      "config_sha256": "c9200e9157a5491e76a8b48ecc1c5e7320ef71995351df0c4bcb0eeeb40d7ce4",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate1_seed20261012_T512"
+    },
+    {
+      "block": 0,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T384.json",
+      "config_sha256": "a7297ca19274a59dcf95e638143a48fc3b30cda4b697e4137a21b05e00fe55df",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate1_seed20261013_T384"
+    },
+    {
+      "block": 0,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T512.json",
+      "config_sha256": "ab63084429cc81abb79a96706b0eaa91ea2b25cf89bdf9515e02739cdedbf7a8",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate1_seed20261013_T512"
+    },
+    {
+      "block": 0,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T384.json",
+      "config_sha256": "242dea07f683ae3692a4aea4ad05798ebca71489f970c728f890cbce58486faf",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate2_seed20261012_T384"
+    },
+    {
+      "block": 0,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T512.json",
+      "config_sha256": "4a1f4131c58774f6bd58baa5dd5e9551118dc478c264e09015dddfedbcbd8c71",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate2_seed20261012_T512"
+    },
+    {
+      "block": 0,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T384.json",
+      "config_sha256": "1c81cc60f42331b427cef040b3b44d5bdbb20a5e38d9d3d95c488fd1a504f279",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate2_seed20261013_T384"
+    },
+    {
+      "block": 0,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T512.json",
+      "config_sha256": "f42257fb432bf877a15823a2cfd21de40ba5e75386de649edb667acbb69ba29e",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "separate",
+        "interleaved",
+        "mixed"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block0/E_rate2_seed20261013_T512"
+    },
+    {
+      "block": 3,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T512.json",
+      "config_sha256": "72082e493dc4efc47827885c3e6a143ec6c763f5c2916d6ba82e69d9e59e639a",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate0_seed20261013_T512"
+    },
+    {
+      "block": 3,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T384.json",
+      "config_sha256": "cf78cb32c2b0de62a151db3829bdcf310422cf06e5743954f601d9698704a99a",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate1_seed20261012_T384"
+    },
+    {
+      "block": 3,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T512.json",
+      "config_sha256": "c9200e9157a5491e76a8b48ecc1c5e7320ef71995351df0c4bcb0eeeb40d7ce4",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate1_seed20261012_T512"
+    },
+    {
+      "block": 3,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T384.json",
+      "config_sha256": "a7297ca19274a59dcf95e638143a48fc3b30cda4b697e4137a21b05e00fe55df",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate1_seed20261013_T384"
+    },
+    {
+      "block": 3,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T512.json",
+      "config_sha256": "ab63084429cc81abb79a96706b0eaa91ea2b25cf89bdf9515e02739cdedbf7a8",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate1_seed20261013_T512"
+    },
+    {
+      "block": 3,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T384.json",
+      "config_sha256": "242dea07f683ae3692a4aea4ad05798ebca71489f970c728f890cbce58486faf",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate2_seed20261012_T384"
+    },
+    {
+      "block": 3,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T512.json",
+      "config_sha256": "4a1f4131c58774f6bd58baa5dd5e9551118dc478c264e09015dddfedbcbd8c71",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate2_seed20261012_T512"
+    },
+    {
+      "block": 3,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T384.json",
+      "config_sha256": "1c81cc60f42331b427cef040b3b44d5bdbb20a5e38d9d3d95c488fd1a504f279",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate2_seed20261013_T384"
+    },
+    {
+      "block": 3,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T512.json",
+      "config_sha256": "f42257fb432bf877a15823a2cfd21de40ba5e75386de649edb667acbb69ba29e",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate2_seed20261013_T512"
+    },
+    {
+      "block": 3,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T384.json",
+      "config_sha256": "7932f50ba58a1be56a85808fd5270a1e72f0da87e10d1e13ac5b52cf6e3ecaae",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate0_seed20261012_T384"
+    },
+    {
+      "block": 3,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T512.json",
+      "config_sha256": "257e5a749091c5e29ed3e7e89331ba917eb95f4a13ae084c8f055e7bf594ad9f",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate0_seed20261012_T512"
+    },
+    {
+      "block": 3,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T384.json",
+      "config_sha256": "3ffaa9d9f1cef7b9a1cd6ddc7d9ca09c716def0dd76dff9b42adf9ed138e9ca9",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "interleaved",
+        "mixed",
+        "separate"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block3/E_rate0_seed20261013_T384"
+    },
+    {
+      "block": 4,
+      "slot": 0,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T384.json",
+      "config_sha256": "cf78cb32c2b0de62a151db3829bdcf310422cf06e5743954f601d9698704a99a",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate1_seed20261012_T384"
+    },
+    {
+      "block": 4,
+      "slot": 1,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261012_T512.json",
+      "config_sha256": "c9200e9157a5491e76a8b48ecc1c5e7320ef71995351df0c4bcb0eeeb40d7ce4",
+      "trace_file_sha256": "4690e19e9181b6e575b31a02c8a3ae61b4b251126997aa84c4d29841810efbd8",
+      "set": "trace_rate1_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate1_seed20261012_T512"
+    },
+    {
+      "block": 4,
+      "slot": 2,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T384.json",
+      "config_sha256": "a7297ca19274a59dcf95e638143a48fc3b30cda4b697e4137a21b05e00fe55df",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate1_seed20261013_T384"
+    },
+    {
+      "block": 4,
+      "slot": 3,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate1_seed20261013_T512.json",
+      "config_sha256": "ab63084429cc81abb79a96706b0eaa91ea2b25cf89bdf9515e02739cdedbf7a8",
+      "trace_file_sha256": "c76a74bb132bb1cc12a889bc00a527ca48a3f5e40f036349b2aeb18b4334d24a",
+      "set": "trace_rate1_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate1_seed20261013_T512"
+    },
+    {
+      "block": 4,
+      "slot": 4,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T384.json",
+      "config_sha256": "242dea07f683ae3692a4aea4ad05798ebca71489f970c728f890cbce58486faf",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate2_seed20261012_T384"
+    },
+    {
+      "block": 4,
+      "slot": 5,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261012_T512.json",
+      "config_sha256": "4a1f4131c58774f6bd58baa5dd5e9551118dc478c264e09015dddfedbcbd8c71",
+      "trace_file_sha256": "d735272b9d9d4857b8c0395c4b5c024d10098fbdd32460414d686265fbf81d93",
+      "set": "trace_rate2_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate2_seed20261012_T512"
+    },
+    {
+      "block": 4,
+      "slot": 6,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T384.json",
+      "config_sha256": "1c81cc60f42331b427cef040b3b44d5bdbb20a5e38d9d3d95c488fd1a504f279",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate2_seed20261013_T384"
+    },
+    {
+      "block": 4,
+      "slot": 7,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate2_seed20261013_T512.json",
+      "config_sha256": "f42257fb432bf877a15823a2cfd21de40ba5e75386de649edb667acbb69ba29e",
+      "trace_file_sha256": "81ee3c203bd7a8338d7dbe79f45fe8ae2f09bbef17993772ac5b71713476d5a0",
+      "set": "trace_rate2_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate2_seed20261013_T512"
+    },
+    {
+      "block": 4,
+      "slot": 8,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T384.json",
+      "config_sha256": "7932f50ba58a1be56a85808fd5270a1e72f0da87e10d1e13ac5b52cf6e3ecaae",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate0_seed20261012_T384"
+    },
+    {
+      "block": 4,
+      "slot": 9,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261012_T512.json",
+      "config_sha256": "257e5a749091c5e29ed3e7e89331ba917eb95f4a13ae084c8f055e7bf594ad9f",
+      "trace_file_sha256": "98010227a5f76b06a08c80859a0c1b61343de9dde979ab56653bb36be74f8d63",
+      "set": "trace_rate0_seed20261012",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate0_seed20261012_T512"
+    },
+    {
+      "block": 4,
+      "slot": 10,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T384.json",
+      "config_sha256": "3ffaa9d9f1cef7b9a1cd6ddc7d9ca09c716def0dd76dff9b42adf9ed138e9ca9",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T384",
+      "token_budget": 384,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate0_seed20261013_T384"
+    },
+    {
+      "block": 4,
+      "slot": 11,
+      "config": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/configs/E_rate0_seed20261013_T512.json",
+      "config_sha256": "72082e493dc4efc47827885c3e6a143ec6c763f5c2916d6ba82e69d9e59e639a",
+      "trace_file_sha256": "2aff5f8fe7aaca5b95afc5f32d9ffe06b1b686d2d9330cf185c3c21be9b89d2d",
+      "set": "trace_rate0_seed20261013",
+      "budget": "T512",
+      "token_budget": 512,
+      "policy_order": [
+        "mixed",
+        "separate",
+        "interleaved"
+      ],
+      "out": "/root/work/nano-vllm-remote/runs/20261012-015122-127636-online/formal/block4/E_rate0_seed20261013_T512"
+    }
+  ],
+  "blocks": 3,
+  "block_ids": [
+    0,
+    3,
+    4
+  ],
+  "policies": [
+    "separate",
+    "interleaved",
+    "mixed"
+  ],
+  "position_balanced": true,
+  "reuse_from": null,
+  "tool_sha256": "eae284a7b0818e12e61741e0b11f7e3fe9d70685bd50dfb088eb5f96ba93114d"
+}

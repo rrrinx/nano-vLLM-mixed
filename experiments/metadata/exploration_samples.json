@@ -1,0 +1,204 @@
+{
+  "selected": {
+    "set0": [
+      {
+        "dataset_index": 464,
+        "question_id": "26777b36ec1142f6b87f11659a9059d9",
+        "category": "high_entropy",
+        "source": "https://raw.githubusercontent.com/X-PLUG/WritingBench/4701e81e10d0c45cd2f3114efa315c4662da348a/benchmark_query/benchmark_all.jsonl",
+        "src_id": "writing_bench_694",
+        "qwen_chat_tokens": 2084
+      },
+      {
+        "dataset_index": 1248,
+        "question_id": "50f002de1178491f97b6f46de521435f",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-in_file_780",
+        "qwen_chat_tokens": 2001
+      },
+      {
+        "dataset_index": 143,
+        "question_id": "cc930f1c8c504484bb71f496ea367ee5",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2080",
+        "qwen_chat_tokens": 2053
+      },
+      {
+        "dataset_index": 1083,
+        "question_id": "801522d72df04eeea23677c66a0865a8",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-cross_file_first_319",
+        "qwen_chat_tokens": 2017
+      },
+      {
+        "dataset_index": 323,
+        "question_id": "1d9acadfcf1c40b59298379c86cf1b20",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_1912",
+        "qwen_chat_tokens": 2049
+      },
+      {
+        "dataset_index": 1154,
+        "question_id": "f0e157340b19426d8b8a1d8309e6f45b",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-in_file_181",
+        "qwen_chat_tokens": 2039
+      },
+      {
+        "dataset_index": 103,
+        "question_id": "b7c007875bbe45c998bc43386fe3e814",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_356",
+        "qwen_chat_tokens": 2047
+      },
+      {
+        "dataset_index": 1440,
+        "question_id": "9d190821cc4e4d2dbd498a9d3509ed2c",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-cross_file_first_806",
+        "qwen_chat_tokens": 2008
+      }
+    ],
+    "set1": [
+      {
+        "dataset_index": 454,
+        "question_id": "ddcf4a1cfaf545ca8b08510a9dc85b11",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2886",
+        "qwen_chat_tokens": 2062
+      },
+      {
+        "dataset_index": 1094,
+        "question_id": "5a1ff1390dbd469e8400fdec638a7334",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-in_file_1231",
+        "qwen_chat_tokens": 2016
+      },
+      {
+        "dataset_index": 379,
+        "question_id": "d258080d683543ea809057a8b43d61ce",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_43",
+        "qwen_chat_tokens": 2025
+      },
+      {
+        "dataset_index": 1322,
+        "question_id": "03c27ab63a444453a8ef09f9b913b738",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-cross_file_first_1686",
+        "qwen_chat_tokens": 2139
+      },
+      {
+        "dataset_index": 329,
+        "question_id": "6ab1aa2753714241be0615e4ddf34660",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2447",
+        "qwen_chat_tokens": 2035
+      },
+      {
+        "dataset_index": 1452,
+        "question_id": "46ac7e6b20d94b5fb4727af60b96909f",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-cross_file_random_1040",
+        "qwen_chat_tokens": 1984
+      },
+      {
+        "dataset_index": 174,
+        "question_id": "055720fb7d3c4fa7a3f0bec847da9a4b",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_1592",
+        "qwen_chat_tokens": 2064
+      },
+      {
+        "dataset_index": 1520,
+        "question_id": "1f26ddc98cda4bb6a2f51264b5fe44db",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-in_file_1637",
+        "qwen_chat_tokens": 1973
+      }
+    ],
+    "set2": [
+      {
+        "dataset_index": 472,
+        "question_id": "839043c7022b44a48f8ed7e4e5a4febd",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2809",
+        "qwen_chat_tokens": 2096
+      },
+      {
+        "dataset_index": 1226,
+        "question_id": "c3524b1ee1af44e3990c571c5436221a",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-cross_file_random_1458",
+        "qwen_chat_tokens": 1998
+      },
+      {
+        "dataset_index": 195,
+        "question_id": "82f33a824bec4164918aad23681b25b5",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2445",
+        "qwen_chat_tokens": 1995
+      },
+      {
+        "dataset_index": 1372,
+        "question_id": "36c7c4615d134dd6a337cb144351e491",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-cross_file_first_348",
+        "qwen_chat_tokens": 2019
+      },
+      {
+        "dataset_index": 196,
+        "question_id": "4c83853bfc1740699ae1a828bc95f4c6",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_2752",
+        "qwen_chat_tokens": 2028
+      },
+      {
+        "dataset_index": 1282,
+        "question_id": "097740418adc484b9a18e36d8ab89331",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_python_v1.1/tree/8a7cf0c8942cc1aa066bf261839650ac55a2ff79",
+        "src_id": "tianyang/repobench_python_v1.1-cross_file_random_1472",
+        "qwen_chat_tokens": 1988
+      },
+      {
+        "dataset_index": 248,
+        "question_id": "89e90d939bd541c4a0cbf72ce6a63c6d",
+        "category": "high_entropy",
+        "source": "https://www.gutenberg.org",
+        "src_id": "gutenberg_open_books_1058",
+        "qwen_chat_tokens": 2066
+      },
+      {
+        "dataset_index": 1283,
+        "question_id": "51a8f43467fb409fb153ec500514aa64",
+        "category": "low_entropy",
+        "source": "https://huggingface.co/datasets/tianyang/repobench_java_v1.1/tree/0c2b0db49ea372525f5db37b6b6ef438aa20f35d",
+        "src_id": "tianyang/repobench_java_v1.1-cross_file_first_822",
+        "qwen_chat_tokens": 1986
+      }
+    ]
+  },
+  "source_file_sha256": "90df6c01a3cb7dc0243a54545c4fc9f6c40aa5ea472f2a8f085e76a4744704ee",
+  "seed": 20261009
+}

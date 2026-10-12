@@ -1,0 +1,3 @@
+# Keep archived code/data fingerprints independent of checkout line ending policy.
+* -text
+*.sh text eol=lf
